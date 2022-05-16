@@ -1,0 +1,235 @@
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* CSS VARIABLES -----------------------------------------*/
+:root{
+    --navbar-height:59px;
+}
+/* NAVIGATION BAR  --------------------------------------*/
+#navbar{
+ display: flex;
+ /* background-color: rgb(161, 143, 143); */
+ align-items: center;
+ position: relative;
+}
+
+/* LOGO AND IMAGE IN NAVIGATION BAR ----------------------*/
+#navbar .logo{
+    margin: 4px ;
+}
+#navbar .logo img{
+    height: 80px;
+    margin: 4px ;
+    /* width: 79px; */
+    /* padding: 6px; */
+}
+/* LIST STYLING IN NAVIGATION BAR ------------------------*/
+#navbar::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(161, 143, 143);
+    opacity: 0.7;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+#navbar ul{
+    display: flex;
+    /* margin: 21px; */
+    align-items: center;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+   display: block;
+   text-decoration: none;
+   padding: 13px 23px;
+   color: white;
+   border-radius: 34px;
+   font-family: 'Pattaya', sans-serif;
+   font-size: 25px;
+}
+#navbar ul li a:hover{
+   font-family: 'Pattaya', sans-serif;
+   background-color: white;
+   color: black;
+   opacity: 0.8;
+   border-radius: 34px;
+}
+
+
+/* SECTION HOME STYLING ----------------------------------*/
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 200px;
+    /* margin: 23px 44px; */
+    height: 315px;
+    height: 400px;
+    
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('https://i.pinimg.com/originals/e5/e8/cd/e5e8cdb29ed5ad4903470c07d6475d59.jpg') no-repeat center center/cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 500px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+     color: white;
+     text-align: center;
+     text-shadow: purple 12px 16px 15px;
+     font-family: 'Bree Serif', serif;
+     font-size: 3.8rem;
+    /* padding: 12px; */
+}
+
+#home p{
+      font-size: 2.1rem;
+      color: white;
+      text-align: center;
+      font-family: 'Bree Serif', serif;
+}
+
+.btn:hover{
+    border-color: white;
+    background-color: blue;
+    opacity: 0.9;
+    color: yellow;
+}
+
+/* SERVICES SECTION-------------------------------------- */
+#services{
+    display: flex;
+    margin: 4px 34px;
+}
+#services .box{
+    border: 2px solid rgb(255, 0, 255);
+    padding: 10px 34px;
+    margin: 25px 6px;
+    background-color: rgb(255, 224, 255);
+    border-radius: 23px;
+
+}
+#services img{
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+#services .box p{
+    font-family: 'Bree Serif', serif;
+}
+
+/* CLIENTS SECTION--------------------------------------- */
+#clients-section{
+    height: 344px;
+    position: relative;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 130px;
+    /* border: 2px solid black; */
+    border-radius: 35px;
+}
+
+.client-item{
+    padding: 34px;
+}
+#clients-section::before{
+     content: "";
+     position: absolute;
+     background:url('https://cdn.pixabay.com/photo/2015/12/09/17/11/vegetables-1085063__340.jpg') no-repeat center center/cover;
+     height: 100%;
+     width: 100%;
+     z-index: -1;
+     opacity: 0.4;
+}
+
+/* CONTACTS US SECTION -----------------------------------*/
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background-color: #8356562b;
+}
+.contact-box form{
+    width: 30%;
+}
+.contact-box label{
+    font-size: 1.3rem;
+}
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+.contact-box input,
+.contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+
+
+
+/* FOOTER STYLE TAGS */
+footer{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 9px 20px;
+}
+
+
+
+/* UTILITY CLASSES--------------------------------------- */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+.h-secondary{
+    font-size: 2.1rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+.center{
+    text-align: center;
+}
+.btn{
+    font-size: 1.5rem;
+    border-radius: 20px;
+    padding: 6px 20px;
+    margin: 17px;
+    text-align: center;
+    color: black;
+    border: 2px solid blue;
+    background-color: white;
+    cursor: pointer;
+    text-align: center;
+   }
